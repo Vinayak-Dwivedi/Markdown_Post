@@ -13,7 +13,7 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false, // Emit files if needed
+    "noEmit": true, // Emit files if needed
     "jsx": "react-jsx"
   },
  "include": ["src/**/*.ts", "src/**/*.tsx",],

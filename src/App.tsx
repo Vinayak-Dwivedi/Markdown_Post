@@ -1,15 +1,18 @@
-import MusicBody from "./Components/MusicBody";
-// import ShowList from "./Components/ShowList";
-// import ShowMusic from "./Components/ShowMusic";
+import { Routes, Route } from "react-router-dom";
+import Login from "./Components/Login";
+import Users from "./Components/Users";
+import EditUser from "./Components/EditUser";
+
 
 function App() {
   return (
-    <div className="bg-[#99ca66] p-1 h-screen">
-      {/* <ShowMusic /> */}
-      <div>
-        <MusicBody />
-      </div>
-    </div>
+  
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/edit/:id" element={<EditUser />} />
+      </Routes>
+   
   );
 }
 
